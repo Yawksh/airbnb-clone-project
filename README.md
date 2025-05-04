@@ -35,38 +35,58 @@ JWT                                                     (JSON Web Tokens)	Manage
 ### 🔑 Key Entities & Attributes
 #### Users
 id (Primary Key)
+
 name
+
 email
+
 password_hash
+
 is_host
 
 #### Properties
 id (Primary Key)
+
 host_id (Foreign Key to Users)
+
 title
+
 location
+
 price_per_night
 #### Bookings
 
 id (Primary Key)
+
 property_id (Foreign Key to Properties)
+
 user_id (Foreign Key to Users)
+
 start_date
+
 end_date
 
 #### Reviews
 
 id (Primary Key)
+
 user_id
+
 property_id
+
 rating
+
 comment
 #### Payments
 
 id (Primary Key)
+
 booking_id
+
 amount
+
 payment_method
+
 status
 
 ## 🚀 Feature Breakdown
